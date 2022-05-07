@@ -6,8 +6,13 @@ import cors from "cors";
 const createServer = (): express.Application => {
   const app = express();
 
+  const corsConfig = {
+    credentials: true,
+    origin: "https://play.unicial.org",
+  };
+
   app.use(express.urlencoded({ extended: true }));
-  app.use(cors());
+  app.use(cors(corsConfig));
   app.use(express.json());
 
   app.disable("x-powered-by");
