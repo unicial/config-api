@@ -5,8 +5,7 @@
   },
   "servers": {
     "contentWhitelist": [
-      "https://peer-lb.decentraland.org",
-      "https://peer.decentraland.org"
+      "https://peer.unicial.org"
     ]
   },
   "minCatalystVersion": "1.0.0",
