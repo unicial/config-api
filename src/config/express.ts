@@ -8,7 +8,7 @@ const createServer = (): express.Application => {
 
   const corsConfig = {
     credentials: true,
-    origin: "https://play.unicial.org",
+    origin: "*",
   };
 
   app.use(express.urlencoded({ extended: true }));
