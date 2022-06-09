@@ -7,7 +7,7 @@ const createServer = (): express.Application => {
   const app = express();
 
   const corsConfig = {
-    credentials: true,
+    credentials: false,
     origin: "*",
   };
 
