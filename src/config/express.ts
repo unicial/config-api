@@ -7,7 +7,13 @@ const createServer = (): express.Application => {
   const app = express();
 
   const corsConfig = {
-    origin: "*",
+    credentials: true,
+    origin: [
+      "http://localhost:3000",
+      "http://localhost",
+      "http://127.0.0.1:3000",
+      "https://play.unicial.org",
+    ],
   };
 
   app.use(express.urlencoded({ extended: true }));
